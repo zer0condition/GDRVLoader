@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gdrvloader", "src\gdrv-loader.vcxproj", "{C2F662DB-3ED6-47EE-A331-2EBE11AA36C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2F662DB-3ED6-47EE-A331-2EBE11AA36C3}.Debug|x64.ActiveCfg = Debug|x64
+		{C2F662DB-3ED6-47EE-A331-2EBE11AA36C3}.Debug|x64.Build.0 = Debug|x64
+		{C2F662DB-3ED6-47EE-A331-2EBE11AA36C3}.Release|x64.ActiveCfg = Release|x64
+		{C2F662DB-3ED6-47EE-A331-2EBE11AA36C3}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CF0B89F-CA44-455A-9863-248A94FC4698}
+	EndGlobalSection
+EndGlobal
