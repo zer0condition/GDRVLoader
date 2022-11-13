@@ -57,7 +57,7 @@ int wmain(int argc, wchar_t** argv)
 	}
 
 	if (NT_SUCCESS(Status))
-		Printf(L"Driver loaded successfully.\n");
+		Printf(L"Action successfully completed.\n");
 	else
 		Printf(L"Error at: %08X\n", Status);
 
