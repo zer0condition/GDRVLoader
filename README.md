@@ -8,7 +8,7 @@ added more portability by adding byte loading for the vulnerable driver.<br />
 open command prompt as admin
 
 Load driver:
-gdrvloader.exe [targetdrivername].sys
+gdrvloader.exe path/[targetdrivername].sys
 
 Unload driver:
-gdrvloader.exe [loadedtargetdrivername].sys -unload
+gdrvloader.exe path/[loadedtargetdrivername].sys -unload
