@@ -1,14 +1,2 @@
-# gdrv-loader-updated
-
-
-updated https://github.com/fengjixuchui/gdrv-loader for new version/s (upto latest windows 11 version\s).<br />
-added more portability by adding byte loading for the vulnerable driver.<br />
-
-## usage
-open command prompt as admin
-
-Load driver:
-gdrvloader.exe path/[targetdrivername].sys
-
-Unload driver:
-gdrvloader.exe path/[loadedtargetdrivername].sys -unload
+The repository for gdrv-loader, available at https://github.com/fengjixuchui/gdrv-loader, has been updated to support upto latest versions of Windows 11.
+The updates include improved portability through the addition of byte loading for the vulnerable driver.
