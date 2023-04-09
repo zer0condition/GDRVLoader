@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C2F662DB-3ED6-47EE-A331-2EBE11AA36C3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Swind2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GDRVLoader</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\Release\</OutDir>
+    <IntDir>$(Platform)\$(ConfigurationName)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>swind2</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <EmbedManifest>true</EmbedManifest>
+    <TargetName>$(TargetName.Replace(' ',''))</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WINVER=0x0601;_WIN32_WINNT=0x0601;NTDDI_VERSION=0x06010000;WIN32;_WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/Gw %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <Version>6.1</Version>
+      <MinimumRequiredVersion>6.01</MinimumRequiredVersion>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\x64</AdditionalLibraryDirectories>
+      <EntryPointSymbol>NtProcessStartupW</EntryPointSymbol>
+      <AdditionalOptions>/NOVCFEATURE /NOCOFFGRPINFO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ntdllp_7.lib;kernel32.lib;shlwapi.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SetChecksum>true</SetChecksum>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <StringPooling>
+      </StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <ControlFlowGuard>
+      </ControlFlowGuard>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>
+      </MinimumRequiredVersion>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalOptions>/NOVCFEATURE /NOCOFFGRPINFO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ntdll.lib;kernel32.lib;shlwapi.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <GenerateMapFile>false</GenerateMapFile>
+      <SetChecksum>false</SetChecksum>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Manifest>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Manifest>
+    <Manifest>
+      <VerboseOutput>true</VerboseOutput>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="exploit\pe.cpp" />
+    <ClCompile Include="exploit\swind2.cpp" />
+    <ClCompile Include="GDRVLoader.cpp" />
+    <ClCompile Include="hde\hde64.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="binary\bytes.h" />
+    <ClInclude Include="binary\dropper.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="hde\hde64.h" />
+    <ClInclude Include="hde\table64.h" />
+    <ClInclude Include="utils\ntdll.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

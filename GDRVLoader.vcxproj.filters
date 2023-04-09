@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Binary">
+      <UniqueIdentifier>{642f4797-7b5e-46b2-b5bf-d27522e70bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exploit">
+      <UniqueIdentifier>{6c1f4902-8567-466b-aa97-8983f2a2a1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hde">
+      <UniqueIdentifier>{bd3d2744-d845-40dc-8b16-fd416ca97bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{7ef1f0a2-f1f9-4a60-97e9-36fdb55f080b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GDRVLoader.cpp" />
+    <ClCompile Include="exploit\swind2.cpp">
+      <Filter>Exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde64.c">
+      <Filter>Hde</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit\pe.cpp">
+      <Filter>Exploit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="binary\bytes.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="binary\dropper.h">
+      <Filter>Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde64.h">
+      <Filter>Hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\table64.h">
+      <Filter>Hde</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ntdll.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h" />
+  </ItemGroup>
+</Project>
