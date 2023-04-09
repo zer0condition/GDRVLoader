@@ -13,3 +13,7 @@
   <li>a) Drag the target driver into GDRVLoader.exe. <br> b) Run the tool from the cmd using administrator privileges with command "GDRVLoader.exe TargetDriver.sys".</li>
   <li>Enter load/LOAD or unload/UNLOAD in the command prompt.</li>
 </ol>
+<h2>Images</h2>
+<div>
+  <img src="https://i.imgur.com/Lp0sHdQ.png" alt="ok">
+</div>
