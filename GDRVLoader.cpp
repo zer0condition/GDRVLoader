@@ -1,6 +1,5 @@
 #include "global.h"
 #include "binary/dropper.h"
-#include <Windows.h>
 
 const wchar_t* DriverPath = L"C:\\Windows\\System32\\Drivers\\gdrv.sys";
 
