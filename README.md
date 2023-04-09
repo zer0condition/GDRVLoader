@@ -10,6 +10,6 @@
 <h2>Usage</h2>
 <ol>
   <li>Download the latest release.</li>
-  <li>Drag the target driver into GDRVLoader.exe or Run the tool from the cmd using administrator privileges with command GDRVLoader.exe TargetDriver.sys</li>
+  <li>a) Drag the target driver into GDRVLoader.exe. <br> b) Run the tool from the cmd using administrator privileges with command "GDRVLoader.exe TargetDriver.sys".</li>
   <li>Enter load/LOAD or unload/UNLOAD in the command prompt.</li>
 </ol>
